@@ -5,7 +5,12 @@ app_name = 'frontend'
 
 urlpatterns = [
     path('', index, name=''),
-    path('join', index),
-    path('create', index),
-    path('room/<str:roomCode>', index)
+    # path('info', index),
+    # path('join', index),
+    # path('create', index),
+    # path('room/<str:roomCode>', index),
+    path('login', index),
+    path('signup', index),
+    path('top', index),
+    path('guu', index)
 ]

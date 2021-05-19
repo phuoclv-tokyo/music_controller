@@ -1,0 +1,870 @@
+/* Phan 3: Hoc cach cat web qua tung bai tap
+      Su dung font icon va hieu ung hover the nao */
+section.khoitinto-tinnho {
+  height: 500px;
+}
+
+article.tinto {
+  width: 690px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+article.tinto img {
+  float: left;
+  margin-right: 20px;
+}
+
+a.tdtinto {
+  font-family: bachdang;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.tdtinto:hover {
+  color: red;
+}
+
+p.ndtinto {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  color: gray;
+}
+
+a.tentg {
+  text-align: center;
+  display: block;
+  color: gray;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+article.tinnho {
+  width: 325px;
+  height: 265px;
+  border: 1px solid #e9e9e9;
+  margin: 0px 20px 0px 0px;
+  float: left;
+}
+
+article.tinnho img {
+  width: 100%;
+}
+
+a.tdtinnho {
+  color: #000;
+  font-family: "segoe ui light";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.tdtinnho:hover {
+  color: red;
+}
+
+.thongtin span {
+  color: red;
+}
+
+.thongtin {
+  padding-left: 10px;
+  display: block;
+  margin: 10px 0px;
+}
+
+@font-face {
+  font-family: bachdang;
+  src: url(unicode.publish.uvnbachdang_r.ttf);
+}
+
+.face-test {
+  transition: 0.4s;
+}
+
+.face-test:hover {
+  padding-left: 1240px;
+  color: red;
+  transition: 0.9s;
+  opacity: 0;
+}
+
+.awesome {
+  font-size: 100px;
+  color: red;
+}
+
+.iconff {
+  font-size: 50px;
+  color: magenta;
+}
+
+.iconff:hover {
+  color: mediumaquamarine;
+  transition: 0.4s;
+  opacity: 0.3;
+}
+
+/* END Phan 3... */
+
+.all-footer {
+  margin-bottom: 100px;
+}
+
+/* Chữa bài 4 megafun */
+.b4-tieude {
+  border-bottom: 4px solid orange;
+}
+
+.b4-tieude h2 {
+  background: white;
+  display: inline-block;
+  position: relative;
+  top: 12px;
+  left: 25px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.b4-tin {
+  width: 190px;
+  height: 215px;
+  margin-right: 10px;
+  float: left;
+  margin-top: 15px;
+}
+
+.b4-tin img {
+  width: 100%;
+}
+.b4-tin .b4-tin__tieude {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  color: gray;
+  padding: 0 5px 0 5px;
+}
+
+.b4-big {
+  width: 790px;
+  height: 1000px;
+}
+
+.b4-tin:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* END bai 4 */
+
+/* Chữa bài 5 icon vnexpress */
+.tintrai {
+  width: 210px;
+  height: 75px;
+  background-image: url(/static/images/5-1.jpeg);
+  padding-top: 240px;
+  overflow: hidden;
+  float: left;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.tintrai .tdtintrai {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(0 0 0 / 35%);
+  padding: 10px;
+  display: block;
+}
+
+.tintrai .tdtintrai:hover {
+  color: tomato;
+  transition: 0.6;
+}
+
+.b5-phai {
+  float: left;
+}
+
+.b5-phai .phai-1tin {
+  width: 400px;
+  height: 75px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.phai-1tin img {
+  width: 75px;
+  float: left;
+  margin-right: 5px;
+}
+
+.phai-1tin a.tdtinphai {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.phai-1tin p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: gray;
+}
+
+.b5-tren {
+  border-bottom: 1px dotted #8080805c;
+  margin-bottom: 10px;
+  width: 610px;
+}
+
+.b5-tren .tdtren {
+  background-image: url("/static/images/star1.svg");
+  background-repeat: no-repeat;
+  float: left;
+  height: 35px;
+}
+
+.tdtren span {
+  margin-left: 26px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  color: violet;
+  display: inline-block;
+}
+.tdtren__tag {
+  padding-left: 14px;
+  display: inline-block;
+  margin-top: 5px;
+  color: #80808096;
+  font-size: 13px;
+}
+
+.bai5 {
+  height: 400px;
+}
+/* END bai 5 */
+
+/* Chua bai docbao.vn */
+.docbaotren {
+  border-left: 8px solid #00bbf3;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.docbaotren a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00bbf3;
+  padding-left: 10px;
+}
+
+.docbaotren a:hover {
+  text-decoration: underline;
+}
+
+.docbaotrai {
+  background-color: #8080802b;
+  width: 280px;
+  height: 390px;
+  float: left;
+  margin-right: 10px;
+}
+
+.docbaotrai img {
+  width: 100%;
+}
+.docbaotrai a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #004f8b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.docbaotrai a:hover {
+  color: #00bbf3;
+}
+.docbaotrai__nd {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #004f8b;
+  display: block;
+  padding: 0 10px;
+}
+.dbtrai__tieude {
+  padding: 0 10px;
+  display: block;
+}
+
+.docbao-1tin {
+  width: 166px;
+  height: 200px;
+  float: left;
+  margin-right: 14px;
+  margin-bottom: 44px;
+}
+
+.docbao-1tin img {
+  width: 166px;
+}
+.docbao-1tin ._1tin_td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #004f8b;
+  text-decoration: none;
+}
+
+.docbaophai {
+  width: 360px;
+  float: left;
+}
+.docbao {
+  height: 555px;
+}
+/* END docbao.vn */
+
+/* Chữa bài vietnamnet.vn */
+.vietnamnet {
+  height: 850px;
+}
+.vnn_khoitren {
+  width: 480px;
+  height: 430px;
+}
+.vnn_khoitren img {
+  width: 480px;
+}
+.vnntren_td {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.vnntren_td:hover {
+  color: #971928;
+}
+.vnntren_nd {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-style: inherit;
+  display: table;
+  margin-top: 5px;
+}
+
+.duoi_1khoi {
+  width: 150px;
+  height: 210px;
+  float: left;
+}
+.duoi_1khoi {
+  margin-right: 10px;
+}
+.duoi_1khoi img {
+  width: 150px;
+}
+.duoi_1khoi .duoi_td {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #333;
+}
+.duoi_1khoi .duoi_td:hover {
+  color: #971928;
+}
+
+.vnn_khoiduoi {
+  width: 480px;
+}
+
+/* END vietnamnet.vn */
+
+/* Chữa bài Marry.vn */
+.marry_tren {
+  width: 700px;
+  height: 40px;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.mr_tdto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: hotpink;
+  text-decoration: none;
+  background-image: url("/static/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100px;
+  padding-bottom: 38px;
+}
+.mr_xt {
+  float: right;
+  margin-top: -80px;
+  text-decoration: none;
+  color: gray;
+}
+.mr_xt:hover {
+  color: blue;
+}
+
+.mr_icon {
+  width: 700px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+}
+._1icon {
+  width: 50px;
+  height: 74px;
+  display: inline-block;
+  margin-right: 10px;
+}
+._1icon a.chuaicon {
+  width: 60px;
+  height: 70px;
+  display: inline-block;
+  background-image: url(/static/images/marry_icon.png);
+  background-position: 117px -744px;
+}
+
+._1icon:hover a.chuaicon {
+  background-position: 117px -902px;
+}
+
+._so2 a.chuaicon {
+  background-position: 62px -744px;
+}
+
+._so2:hover a.chuaicon {
+  background-position: 62px -902px;
+}
+
+._1icon a.linkicon {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: lightslategray;
+  text-decoration: none;
+}
+
+._1icon:hover a.linkicon {
+  color: lightblue;
+}
+
+.mr_3tin {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.mr_1tin {
+  width: 220px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.mr_1tin:nth-child(3n) {
+  margin-right: 0px;
+}
+.mr_1tin img {
+  width: 220px;
+}
+.mr_1tin .mr_1tin--td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rebeccapurple;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+.mr_1tin .mr_1tin--td:hover {
+  color: aqua;
+}
+
+.mr_1tin p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+/* ------------------------ */
+.marryvn {
+  overflow: hidden;
+}
+
+/* END Marry.vn */
+
+/* Chữa bài Giadinh.net */
+.giadinh {
+  width: 430px;
+  height: auto;
+  margin: auto;
+}
+.gd_tieude {
+  border-top: 2px solid #d7657c;
+  text-align: center;
+  padding-top: 10px;
+}
+.gd_tieude a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #d7657c;
+  text-transform: uppercase;
+  position: relative;
+  top: 18px;
+  background: white;
+  padding: 0 15px;
+}
+.giadinh .gd_vien {
+  border-top: 1px solid #80808029;
+  border-bottom: 3px solid rgb(56 54 54 / 35%);
+  height: 4px;
+  margin-bottom: 25px;
+}
+
+.gd_tin img {
+  width: 210px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #80808036;
+  padding: 5px;
+  box-shadow: 4px 4px 0px #80808087;
+}
+.gd_tin .gd_tdtin {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin-bottom: 18px;
+  display: block;
+}
+.gd_tin p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #666;
+  line-height: 16px;
+}
+
+.gd_dstin ul li {
+  background-image: url(/static/images/sprite_giadinh_v2.png);
+  background-position: -782px -94px;
+  background-repeat: no-repeat;
+}
+
+.gd_dstin ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #666;
+  line-height: 20px;
+  padding: 0 15px;
+  display: block;
+}
+.gd_dstin ul li {
+  border-bottom: 1px dotted #8080802b;
+  padding: 5px 0px;
+}
+.gd_dstin ul li:nth-child(3) {
+  border-bottom: none;
+}
+/* END Giadinh.net */
+
+/* Chữa bài Saga.vn */
+.sagavn {
+  width: 900px;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.sg_banner img {
+  width: 900px;
+}
+
+.sg_tag-menu {
+  background: #80808030;
+  text-align: left;
+  margin: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+.sg_tag-menu a {
+  text-decoration: none;
+}
+.sg_tag-menu span {
+  color: #01819e;
+}
+
+.sg_canhgiua {
+  width: 1000px;
+  margin: auto;
+}
+
+.sg_noidung,
+.sg_kttnho {
+  width: 780px;
+}
+
+.sg_tdto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.sg_kthongtin {
+  height: 221px;
+  border-bottom: 1px solid #7d7d7d24;
+  margin-bottom: 20px;
+}
+
+.sg_kthongtin img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+.sg_tdthongtin {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f3f3f;
+  display: block;
+  margin-bottom: 10px;
+}
+.sg_tdthongtin:hover {
+  color: #01819e;
+}
+.sg_kthongtin .sg_tg {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 10px;
+}
+.sg_kthongtin p {
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+}
+.sg_kthongtin_line {
+  border-bottom: 1px solid #8080801f;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.sg_ktinnho img {
+  width: 150px;
+}
+.sg_ktinnho {
+  height: 120px;
+}
+/* END Saga.vn */
+
+/* xinhxinh.vn */
+
+.xx_sample{
+	width: 370px;
+	height: 200px;
+	position: relative;
+}
+.xx_sample img {
+	width: 370px;
+	height: 200px;
+}
+.xx_tieude {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #3c3434a6;
+    width: 350px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    padding: 10px 10px;
+}
+.xx_sample:hover {
+	opacity: 0.9;
+	transition: 1s;
+}
+
+/* END xinhxinh.vn */
+
+/* Thuoc tinh Flex  */
+.ttfex_vd1 {
+	width: 900px;
+	margin: auto;
+	background: lightblue;
+	display: flex;
+	justify-content: flex-start;
+	height: 200px;
+	align-items: baseline;
+}
+
+.k1 {
+	background: brown;
+	padding: 14px;
+	margin: 8px;
+	color: white;
+	border-radius: 5px;
+}
+.ttfex_vd1--khoi2 {
+	padding-top: 30px;
+}
+/* END Flex */
+
+/* Luyện tập về thuộc tinh Flex */
+.llflex1 {
+	width: 900px;
+	margin: auto;
+}
+
+.llflex1_cha {
+	background-image: url("/static/images/flex_1.jpg");
+	background-size: 900px 400px;
+	width: 900px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.llflex1_cha img {
+	width: 900px;
+	height: 400px;
+}
+.llflex1_con {
+	background:rgb(18, 20, 20);
+	width: 200px;
+	padding: 30px;
+	color: white;
+}
+
+.llflex2 {
+
+}
+
+a._2k1 {
+    display: flex;
+    width: 563px;
+    height: 370px;
+    background-image: url(/static/images/flex_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.noidung_2k1 {
+	width: 40%;
+}
+.noidung_2k1 i {
+    float: left;
+    margin-right: 5px;
+    color: red;
+}
+.noidung_2k1 span {
+    color: white;
+    display: block;
+    padding-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+a._2k1:hover {
+	opacity: 0.9;
+}
+._2k1phai .phai1 {
+	height: 180px;
+}
+
+._2k1.k11 {
+	background-image: url(/static/images/flex_3.jpeg);
+	margin-bottom: 10px;
+}
+.llflex2to {
+	display: flex;
+    width: 1140px;
+    justify-content: space-between;
+	margin: auto;
+}
+
+/* END Luyện tập về thuộc tinh Flex */
+
+/* GUU VN */
+a.guu_khoivuongnho {
+	width: 230px;
+	height: 175px;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: white;
+
+}
+
+a.guu_khoivuongnho .layer1 {
+	width: 230px;
+	height: 175px;
+}
+a.guu_khoivuongnho .layer2 {
+	width: 230px;
+    height: 175px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+	background-image: -webkit-linear-gradient(top,rgb(255 255 255 / 0%) 50%,rgb(0 0 0 / 74%) 100%);
+	transition: 0.4s;
+}
+a.guu_khoivuongnho:hover .layer2 {
+	opacity: 0;
+}
+a.guu_khoivuongnho .layer3 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+	/* padding: 8px 16px */
+;
+}
+a.guu_khoivuongnho:hover .layer3 {
+	padding: 20px;
+}
+
+/* END Guu VN */

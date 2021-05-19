@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from rest_framework import generics, status
-from .serializers import RoomSerializer, CreateRoomSerializer, UpdateRoomSerializer
-from .models import Room
+from .serializers import RoomSerializer, CreateRoomSerializer, UpdateRoomSerializer, UserSerializer, CreateUserSerializer
+from .models import Room, User
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import JsonResponse
+from datetime import datetime
 
 
 class RoomView(generics.ListAPIView):
@@ -131,3 +132,43 @@ class UpdateRoom(APIView):
             return Response(RoomSerializer(room).data, status=status.HTTP_200_OK)
 
         return Response({'Bad Request': 'Invalid Data...'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserView(generics.ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+class CreateUserView(APIView):
+    serializer_class = CreateUserSerializer
+
+    def post(self, request, format=None):
+        if not self.request.session.exists(self.request.session.session_key):
+            self.request.session.create()
+
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid():
+            username = serializer.data.get('username')
+            email = serializer.data.get('email')
+            password = serializer.data.get('password')
+            host = self.request.session.session_key
+            updated_at = datetime.now()
+            queryset = User.objects.filter(host=host)
+            if queryset.exists():
+                user = queryset[0]
+                user.username = username
+                user.email = email
+                user.password = password
+                user.updated_at = updated_at
+                user.save(update_fields=['username', 'email', 'password', 'updated_at'])
+                self.request.session['user_uid'] = user.uid
+                return Response(UserSerializer(user).data, status=status.HTTP_200_OK)
+            else:
+                user = User(host=host, username=username,
+                            email=email, password=password, updated_at=updated_at)
+                user.save()
+                self.request.session['user_uid'] = user.uid
+                return Response(UserSerializer(user).data, status=status.HTTP_201_CREATED)
+
+        return Response({'Bad Request': 'Invalid data...'}, status=status.HTTP_400_BAD_REQUEST)
+
+
